@@ -8,8 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'financial-management-front';
 
-  adicionar(title: string) {
-    this.title = title;
+  adicionar() {
+    console.log(`Adicionando ${this.title}`);
+
+    const numero = Math.round(Math.random() * 100);
+    this.title = 'João ' + numero;
+  }
+
+  alterarNome(event: any) {
+    this.title = event.target.value;
   }
 
 }
