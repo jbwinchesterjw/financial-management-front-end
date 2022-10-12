@@ -1,24 +1,26 @@
 <div class="container">
-  <app-funcionario-form (funcionarioAdicionado)="aoAdicionar($event)"></app-funcionario-form>
+  <div class="grid">
 
-  <div class="row" style="margin-top: 20px">
+    <div class="col-12">
+      <h1>Lançamentos</h1>
+    </div>
 
-    <div class="col-2" *ngFor="let f of funcionarios">
-      <app-funcionario-card [funcionario]="f"></app-funcionario-card>
+    <div class="col-12 p-fluid">
+      <label>Descrição</label>
+      <input pInputText type="text">
+    </div>
+
+    <div class="col-12">
+      <label class="block">Vencimento</label>
+      <input pInputText type="text" style="width: 95px">
+
+      <label class="label">até</label>
+      <input pInputText type="text" style="width: 95px">
+    </div>
+
+    <div class="col-12">
+      <button pButton type="submit" label="Pesquisar"></button>
     </div>
 
   </div>
-
 </div>
-
-<p-tabView>
-  <p-tabPanel header="Header 1">
-    Content 1
-  </p-tabPanel>
-  <p-tabPanel header="Header 2">
-    Content 2
-  </p-tabPanel>
-  <p-tabPanel header="Header 3">
-    Content 3
-  </p-tabPanel>
-</p-tabView>
