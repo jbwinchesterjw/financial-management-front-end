@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {FuncionarioCardComponent} from './funcionario/funcionario-card/funcionario-card.component';
 import {FuncionarioFormComponent} from './funcionario/funcionario-form/funcionario-form.component';
+import {TabViewModule} from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {FuncionarioFormComponent} from './funcionario/funcionario-form/funcionar
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
