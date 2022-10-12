@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,16 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'financial-management-front';
+  adicionado = false;
 
   adicionar() {
     console.log(`Adicionando ${this.title}`);
-
-    const numero = Math.round(Math.random() * 100);
-    this.title = 'João ' + numero;
-  }
-
-  alterarNome(event: any) {
-    this.title = event.target.value;
+    this.adicionado = true;
   }
 
 }
