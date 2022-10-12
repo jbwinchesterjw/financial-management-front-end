@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Funcionario} from "./funcionario/Funcionario";
 
 @Component({
   selector: 'app-root',
@@ -6,12 +7,19 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'financial-management-front';
+  ultimoId = 0;
+  nome = "";
   adicionado = false;
+  funcionarios: Funcionario [] = [];
 
   adicionar() {
-    console.log(`Adicionando ${this.title}`);
+    console.log(`Adicionando ${this.nome}`);
     this.adicionado = true;
+
+    this.funcionarios.push({
+      id: ++this.ultimoId,
+      nome: this.nome
+    });
   }
 
 }
