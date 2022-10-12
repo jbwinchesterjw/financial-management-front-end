@@ -5,12 +5,10 @@
 
   <div class="form-group">
     <label>Nome</label>
-    <input type="text" class="form-control"
-           (input)="alterarNome($event)"
-           [value]="title">
+    <input type="text" class="form-control" [(ngModel)]="title">
   </div>
 
   <button type="button" class="btn btn-primary"
-          (click)="adicionar()" [disabled]="title.length == 0 || title.length < 10 ||title.length > 15">Adicionar</button>
+          (click)="adicionar()" [disabled]="title.length == 0">Adicionar</button>
 
 </div>
