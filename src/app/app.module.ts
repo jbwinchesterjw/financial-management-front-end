@@ -10,6 +10,7 @@ import {TabViewModule} from 'primeng/tabview';
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import {TableModule} from 'primeng/table';
+import {TooltipModule} from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {TableModule} from 'primeng/table';
     FormsModule,
     TabViewModule,
     TableModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
