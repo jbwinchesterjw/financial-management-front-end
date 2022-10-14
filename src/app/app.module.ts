@@ -9,6 +9,7 @@ import {FuncionarioFormComponent} from './funcionario/funcionario-form/funcionar
 import {TabViewModule} from 'primeng/tabview';
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,10 @@ import {ButtonModule} from "primeng/button";
     ButtonModule,
     InputTextModule,
     TabViewModule,
-
     AppRoutingModule,
     FormsModule,
-    TabViewModule
+    TabViewModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
