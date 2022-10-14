@@ -11,12 +11,14 @@ import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
+import { LancamentoPesquisaComponent } from './lancamento/lancamento-pesquisa/lancamento-pesquisa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FuncionarioCardComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    LancamentoPesquisaComponent
   ],
   imports: [
     BrowserModule,
