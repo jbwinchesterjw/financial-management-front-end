@@ -13,6 +13,7 @@ import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
 import {LancamentoPesquisaComponent} from './lancamento/lancamento-pesquisa/lancamento-pesquisa.component';
 import {NavbarComponent} from './barranavegacao/navbar/navbar.component';
+import { PesquisaPessoaComponent } from './pessoa/pesquisa-pessoa/pesquisa-pessoa.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {NavbarComponent} from './barranavegacao/navbar/navbar.component';
     FuncionarioCardComponent,
     FuncionarioFormComponent,
     LancamentoPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    PesquisaPessoaComponent
   ],
   imports: [
     BrowserModule,
